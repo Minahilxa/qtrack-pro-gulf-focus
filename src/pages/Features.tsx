@@ -9,37 +9,43 @@ const Features = () => {
       icon: Calendar,
       title: 'Gantt Charts & Task Automation',
       description: 'Advanced project scheduling with intelligent task dependencies, automated workflows, and milestone tracking.',
-      benefits: ['Automated task scheduling', 'Dependency management', 'Progress tracking', 'Resource allocation']
+      benefits: ['Automated task scheduling', 'Dependency management', 'Progress tracking', 'Resource allocation'],
+      image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
       icon: FileText,
       title: 'Budgeting & Resource Planning',
       description: 'Comprehensive budget management with BOQ support, cost tracking, and resource optimization tools.',
-      benefits: ['BOQ integration', 'Cost center tracking', 'Budget forecasting', 'Resource optimization']
+      benefits: ['BOQ integration', 'Cost center tracking', 'Budget forecasting', 'Resource optimization'],
+      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
       icon: Users,
       title: 'Document Collaboration & Approvals',
       description: 'Secure document management with version control, approval workflows, and team collaboration features.',
-      benefits: ['Version control', 'Approval workflows', 'Real-time collaboration', 'Secure sharing']
+      benefits: ['Version control', 'Approval workflows', 'Real-time collaboration', 'Secure sharing'],
+      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
       icon: Search,
       title: 'AI-Powered Risk Alerts',
       description: 'Intelligent risk detection and early warning systems to keep your projects on track and within budget.',
-      benefits: ['Predictive analytics', 'Risk assessment', 'Early warnings', 'Mitigation strategies']
+      benefits: ['Predictive analytics', 'Risk assessment', 'Early warnings', 'Mitigation strategies'],
+      image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
       icon: Home,
       title: 'Dual-Language Arabic/English Support',
       description: 'Full support for Arabic and English languages with RTL text support and localized interfaces.',
-      benefits: ['RTL support', 'Localized UI', 'Multi-language reports', 'Cultural adaptation']
+      benefits: ['RTL support', 'Localized UI', 'Multi-language reports', 'Cultural adaptation'],
+      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
       icon: List,
       title: 'Field Reporting with Mobile Access',
       description: 'Mobile-first field reporting tools with offline capabilities and real-time data synchronization.',
-      benefits: ['Mobile app', 'Offline mode', 'Real-time sync', 'Photo attachments']
+      benefits: ['Mobile app', 'Offline mode', 'Real-time sync', 'Photo attachments'],
+      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     }
   ];
 
@@ -89,9 +95,11 @@ const Features = () => {
                 </div>
                 <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                   <div className="card-custom p-8 bg-gradient-to-br from-primary/5 to-primary/10">
-                    <div className="w-full h-64 bg-gradient-to-br from-primary/20 to-primary/30 rounded-xl flex items-center justify-center">
-                      <span className="text-muted-foreground text-lg">Feature Demo</span>
-                    </div>
+                    <img 
+                      src={feature.image}
+                      alt={`${feature.title} demonstration`}
+                      className="w-full h-64 object-cover rounded-xl shadow-lg"
+                    />
                   </div>
                 </div>
               </div>

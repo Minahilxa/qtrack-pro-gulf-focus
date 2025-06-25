@@ -16,7 +16,8 @@ const Industries = () => {
         'Audit trail and transparency features',
         'Arabic government document templates'
       ],
-      caseStudy: 'Helped Qatar Ministry of Planning streamline infrastructure project delivery by 40%'
+      caseStudy: 'Helped Qatar Ministry of Planning streamline infrastructure project delivery by 40%',
+      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
       icon: FileText,
@@ -29,7 +30,8 @@ const Industries = () => {
         'Material and equipment tracking',
         'BOQ integration and cost control'
       ],
-      caseStudy: 'Managed $500M+ in construction projects across Doha with zero budget overruns'
+      caseStudy: 'Managed $500M+ in construction projects across Doha with zero budget overruns',
+      image: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
       icon: Users,
@@ -42,7 +44,8 @@ const Industries = () => {
         'Performance analytics and KPIs',
         'Multi-currency support'
       ],
-      caseStudy: 'Increased project delivery efficiency by 60% for leading Gulf consulting firms'
+      caseStudy: 'Increased project delivery efficiency by 60% for leading Gulf consulting firms',
+      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     },
     {
       icon: Calendar,
@@ -55,7 +58,8 @@ const Industries = () => {
         'Budget allocation and tracking',
         'Staff scheduling and coordination'
       ],
-      caseStudy: 'Optimized healthcare facility projects with 99.8% on-time completion rate'
+      caseStudy: 'Optimized healthcare facility projects with 99.8% on-time completion rate',
+      image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
     }
   ];
 
@@ -108,9 +112,11 @@ const Industries = () => {
                 </div>
                 <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                   <div className="card-custom p-8 bg-gradient-to-br from-primary/5 to-primary/10">
-                    <div className="w-full h-80 bg-gradient-to-br from-primary/20 to-primary/30 rounded-xl flex items-center justify-center">
-                      <span className="text-muted-foreground text-lg">Industry Solution Preview</span>
-                    </div>
+                    <img 
+                      src={industry.image}
+                      alt={`${industry.title} solution preview`}
+                      className="w-full h-80 object-cover rounded-xl shadow-lg"
+                    />
                   </div>
                 </div>
               </div>

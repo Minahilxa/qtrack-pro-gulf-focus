@@ -90,9 +90,11 @@ const Index = () => {
 
             <div className="relative">
               <div className="card-custom p-8 bg-gradient-to-br from-primary/5 to-primary/10">
-                <div className="w-full h-64 bg-gradient-to-br from-primary/20 to-primary/30 rounded-xl flex items-center justify-center">
-                  <span className="text-muted-foreground text-lg">Dashboard Preview</span>
-                </div>
+                <img 
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  alt="QTrack Pro Dashboard Preview"
+                  className="w-full h-64 object-cover rounded-xl shadow-lg"
+                />
               </div>
               <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-br from-primary to-[#9CD400] rounded-xl flex items-center justify-center">
                 <ArrowDown className="text-white animate-bounce" size={24} />
